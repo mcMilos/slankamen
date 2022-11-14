@@ -1,0 +1,144 @@
+/* Styles */
+
+body {
+  background-color: seashell;
+  font-size: 16px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  font-family: inherit;
+  color: whitesmoke;
+}
+
+.image-container {
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+#mission .image-container {
+    background-image: url(https://i.imgur.com/pRDPIOK.jpg);
+  }
+
+  section {
+    width: 100%;
+    margin: 3.5rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    width: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Navigation menu */ 
+header {
+    position: fixed;
+    left:0;
+    z-index: 10;
+    width: 100%;
+    border-bottom: solid 1px #c6c1c1;
+    background-color: black;
+    opacity: 0.9;
+    font-family: 'Work Sans', sans-serif;
+  }
+  
+  header .content {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: space-between;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between; 
+    margin-right: 1rem;  
+    }
+
+    li {
+        padding: 10px;
+        text-decoration: none;
+        list-style-type: none; 
+        font-size: 1.3rem;
+    }
+
+    #desktop-logo {
+      font-family: 'Work Sans', sans-serif;
+      font-size: 1.3rem;
+    }
+
+  header .mobile {
+    display: none;
+  }
+
+  /*Front banner*/
+.banner {
+    width: 100%;
+    overflow: hidden;
+  }
+  .banner img {
+    width: 100%;
+    }
+
+    /*  MAIN SECTION */
+
+    /* Our Mission  */
+
+    #mission .image-container {
+       height: 38rem;
+    }
+
+    #mission .image-container .content {
+        justify-content: center;
+        align-items: center;
+      }
+    #mission .image-container .content #mission-statement {
+        height: auto;
+        width: 50%;
+        flex-grow: 0;
+        flex-shrink: 1;
+        background-image: linear-gradient(90deg, rgba(241,255,0,0.29175420168067223) 46%, rgba(86,121,9,0.48783263305322133) 61%, rgba(0,16,36,0.5746673669467788) 92%);
+        color: whitesmoke;
+        font-weight: 600;
+        padding: 1rem 5%;
+        text-align: center;
+        line-height: 1.2;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+      }
+     
+    .title {
+        width: 100%;
+        padding: 1.5rem;
+        text-shadow: 1px 1px black;
+        text-align: center;
+      }
+
+      #mission .image-container .content #mission-statement p {
+        font-family: "Kanit", sans-serif;
+        font-size: 1.2rem;
+      }
+
+      #headline {
+      font-family: 'Parisienne', cursive;
+      color: white;
+      font-size: 3rem;
+      }
