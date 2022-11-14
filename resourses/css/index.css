@@ -24,6 +24,10 @@ a:active {
     background-image: url(https://i.imgur.com/pRDPIOK.jpg);
   }
 
+  #offer .image-container {
+    background-image: url(https://i.imgur.com/HWBDf4A.jpg);
+  }
+
   section {
     width: 100%;
     margin: 3.5rem auto;
@@ -130,15 +134,40 @@ header {
         padding: 1.5rem;
         text-shadow: 1px 1px black;
         text-align: center;
-      }
+        }
 
       #mission .image-container .content #mission-statement p {
         font-family: "Kanit", sans-serif;
         font-size: 1.2rem;
-      }
+        }
 
       #headline {
-      font-family: 'Parisienne', cursive;
-      color: white;
-      font-size: 3rem;
+        font-family: 'Parisienne', cursive;
+        color: white;
+        font-size: 3rem;
+        }
+
+      /* Our Offer  */
+
+      #offer .content .product .product-picture {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        }
+
+      #offer .content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        flex-flow: row wrap;
+        }
+    
+      #offer .content .product {
+        display: flex;
+        flex-direction: column;
+        opacity: 0.9;
+        padding: 1rem;
+        margin: 0.5rem;
       }
