@@ -1,7 +1,7 @@
 /* Styles */
 
 body {
-  background-color: seashell;
+  background-color: black;
   font-size: 16px;
 }
 
@@ -20,12 +20,20 @@ a:active {
     background-attachment: fixed;
   }
 
+#front-banner .image-container {
+    background-image: url(https://i.imgur.com/Mt6J0YL.png);
+  }
+
 #mission .image-container {
     background-image: url(https://i.imgur.com/pRDPIOK.jpg);
   }
 
   #offer .image-container {
     background-image: url(https://i.imgur.com/HWBDf4A.jpg);
+  }
+
+  #hosts .image-container {
+    background-image: url(https://i.imgur.com/e8AIwaf.jpg);
   }
 
   section {
@@ -38,6 +46,8 @@ a:active {
   h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
   }
 
   img {
@@ -51,6 +61,23 @@ a:active {
     background-color: rgba(0, 0, 0, 0.5);
   }
 
+
+  .button {
+    border-width:1px;
+    border-color:rgba(74, 74, 74, 0.89);
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    box-shadow: -7px 10px 14px -7px rgba(0, 0, 0, 1);
+    text-shadow: 0px 0px 0px #3d768a;
+      }
+  
+  .button:hover {
+    background: linear-gradient(#101213, #4d5052);
+  }
+
+
   /* Navigation menu */ 
 header {
     position: fixed;
@@ -61,7 +88,7 @@ header {
     background-color: black;
     opacity: 0.9;
     font-family: 'Work Sans', sans-serif;
-  }
+    }
   
   header .content {
     display: flex;
@@ -93,13 +120,25 @@ header {
   }
 
   /*Front banner*/
-.banner {
-    width: 100%;
-    overflow: hidden;
+
+#front-banner .image-container {
+    height: 58rem;
+ }  
+
+#front-banner .image-container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
-  .banner img {
-    width: 100%;
+
+  #front-banner .image-container .banner h1 {
+    font-family: "Kanit", sans-serif;
+    font-size: 5rem;
+    font-style: italic;
+    color: whitesmoke;
+    text-shadow: 10px 10px black;
     }
+
 
     /*  MAIN SECTION */
 
@@ -127,11 +166,12 @@ header {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-around;
+        border-radius: 5px;
       }
      
     .title {
         width: 100%;
-        padding: 1.5rem;
+        padding: 1.1rem;
         text-shadow: 1px 1px black;
         text-align: center;
         }
@@ -153,6 +193,7 @@ header {
         width: 300px;
         height: 200px;
         overflow: hidden;
+        border-radius: 5px;
         }
 
       #offer .content {
@@ -170,4 +211,53 @@ header {
         opacity: 0.9;
         padding: 1rem;
         margin: 0.5rem;
+      }
+
+      /* Hosts  */
+
+      #hosts .content {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #hosts .content .team {
+        display: flex;
+        flex-direction: column;
+        opacity: 0.9;
+        padding: 1rem;
+        margin: 0.5rem;
+      }
+
+      #hosts .content .team .host-pic {
+        width: 300px;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      .name-full , .product-description {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+      }
+
+      .name-title {
+        background-color: black;
+        opacity: 0.9;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+      }
+
+      .name-title h4 {
+        opacity: 1;
+        color: white;
+      }
+
+      .name-full h4 {
+        color: white;
+        font-weight: 800;
+        font-family: 'Times New Roman', Times, serif;
       }
