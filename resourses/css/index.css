@@ -302,12 +302,17 @@ header {
           width: 100%;
           }
 
-      #headline {
+        #headline {
         display: none;
-      }
+        }
 
-      #desktop-logo {
-       display: none;
-      }
+        #desktop-logo {
+        display: none;
+        }
+
+        .image-container {
+          height: auto;
+          background-size: cover;
+          }
     
       }
