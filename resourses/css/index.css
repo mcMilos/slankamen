@@ -309,10 +309,5 @@ header {
         #desktop-logo {
         display: none;
         }
-
-        .image-container {
-          height: auto;
-          background-size: cover;
-          }
-    
+         
       }
